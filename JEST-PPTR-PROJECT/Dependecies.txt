@@ -1,0 +1,36 @@
+1. npm install jest pupeeteer jest-puppeteer
+2. npm install @babel/core @babel/preset-env babel-jest
+
+
+✏️  Modified D:\Amit\Front-End\Puppeteer\JEST-PPTR-PROJECT\package.json
+
+�  Configuration file created at D:\Amit\Front-End\Puppeteer\JEST-PPTR-PROJECT\jest.config.js
+
+jest is used for unit testing
+
+steps to create jest.config.js
+after step 1 type following cmd on terminal
+
+./node_modules/.bin/jest --init
+
+after jest.config.js is created go to it ans set preset to "jest-puppeteer" and comment test-environment
+
+create a file named jest-puppeteer.config.js in project's root folder and write following code
+
+module.exports = {
+    launch: {
+        headless: false
+    },
+    browserContext: "incognito"
+    
+};
+
+my code was giving error when i tried to override timeout jest.setTimeout(8000)
+
+code for debugging in jest-puppeteer- await jestPuppeteer.debug()
+
+
+
+sims healthcare
+
+module is called content viewer
